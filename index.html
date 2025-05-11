@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letters Between Us 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Letters Between Us 💖</h1>
+    <div id="password-screen">
+      <p>Enter our special password 💌</p>
+      <input type="password" id="password-input" placeholder="Password">
+      <button onclick="checkPassword()">Unlock</button>
+      <p id="error-msg"></p>
+    </div>
+
+    <div id="main-app" style="display:none;">
+      <textarea id="letterInput" placeholder="Write your letter here..."></textarea>
+      <button onclick="sendLetter()">Send Letter</button>
+      <div id="lettersDisplay"></div>
+    </div>
+  </div>
+
+  <!-- Firebase -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
